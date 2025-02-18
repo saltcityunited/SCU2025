@@ -21,11 +21,15 @@ function toggleNav() {
     // Toggle: Menu Active
     overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
+        // Prevent scrolling
+        document.body.style.overflow = 'hidden';
         // Animation In - Overlay
         overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
         // Animate In - Nav Items
         navAnimation('out','in');
     } else {
+        // Allow scrolling
+        document.body.style.overflow = '';
         // Animation Out - Overlay
         overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
         // Animate Out - Nav Items
