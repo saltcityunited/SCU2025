@@ -22,14 +22,18 @@ function toggleNav() {
     overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
         // Prevent scrolling
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden'; // Disable scrolling
+        document.body.style.position = 'fixed'; // Fix body in place
+        document.body.style.width = '100%'; // Ensure it doesn’t shrink
         // Animation In - Overlay
         overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
         // Animate In - Nav Items
         navAnimation('out','in');
     } else {
         // Allow scrolling
-        document.body.style.overflow = '';
+        document.body.style.overflow = ''; // Allow scrolling
+        document.body.style.position = ''; // Reset body position
+        document.body.style.width = ''; // Reset width
         // Animation Out - Overlay
         overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
         // Animate Out - Nav Items
