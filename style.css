@@ -2,11 +2,11 @@
 
 :root {
   --primaryColor: #fff;
-  --navColor1: #333333;
+  --navColor1: #000000;
   --navColor2: #A80532;
   --navColor3: #F2A900;
   --navColor4: #00468B;
-  --navColor5: #000000;
+  --navColor5: #333333;
   --primaryFont: 'Smooch Sans', sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   transform: translateX(-100vw);
 }
 
