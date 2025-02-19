@@ -281,6 +281,11 @@ section#chants {
   border-radius: 5px;
 }
 
+#chants .card:hover {
+  background-color: #ffffff !important;
+  color: var(--navColor2) !important;
+}
+
 section#riot {
   background-color: var(--navColor3);
   min-height: 100vh; /* Ensures full screen height even with less content */
