@@ -4,8 +4,8 @@
   --primaryColor: #fff;
   --navColor1: #000000;
   --navColor2: #A80532;
-  --navColor3: #F2A900;
-  --navColor4: #00468B;
+  --navColor3: #00468B; 
+  --navColor4: #F2A900;
   --navColor5: #333333;
   --primaryFont: 'Smooch Sans', sans-serif;
 }
@@ -231,7 +231,7 @@ nav li:nth-of-type(6) {
 }
 
 .btn:hover {
-  background-color: #00468B !important; /* Cobalt (Dark Blue) on hover */
+  background-color: #000000 !important; 
   color: #ffffff !important;
 }
 
